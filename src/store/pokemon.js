@@ -1,5 +1,4 @@
 import { defineStore } from 'pinia'
-import services from '../services'
 
 export const pokemonStore = defineStore('pokemon', {
     state: () => {

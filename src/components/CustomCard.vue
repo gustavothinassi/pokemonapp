@@ -10,33 +10,27 @@
                 class="animate__animated animate__fadeInUp animate__faster"
                 v-if="state.isOpen"
                 >
-            <div class="row mt-4 col-md-12">
-                <div class="col-md-6">
-                    <span class="card-text">HP: {{ dados.stats[0]?.base_stat }}</span>
-                </div>
-                <div class="col-md-6">
-                    <span class="card-text">Atk: {{ dados.stats[1]?.base_stat }}</span>
+            <div class="row mt-4">
+                <ul class="list-group list-group-horizontal ">
+                    <li class="list-group-item">HP: {{ dados.stats[0]?.base_stat }}</li>
+                    <li class="list-group-item">Atk: {{ dados.stats[1]?.base_stat }}</li>
                     
-                </div>
-                <div class="col-md-6">
-                    <span class="card-text">Defense: {{ dados.stats[2]?.base_stat }}</span>
-                </div>
-                <div class="col-md-6">
-                    <span class="card-text">Spe Atk: {{ dados.stats[3]?.base_stat }}</span>
-                </div>
-                <div class="col-md-6">
-                    <span class="card-text">Spe Def: {{ dados.stats[4]?.base_stat }}</span>
-                </div>
-                <div class="col-md-6">
-                    <span class="card-text">Speed: {{ dados.stats[5]?.base_stat }}</span>
-                </div>
+                </ul>
+                <ul class="list-group list-group-horizontal ">
+                    <li class="list-group-item">Defense: {{ dados.stats[2]?.base_stat }}</li>
+                    <li class="list-group-item">Spe Atk: {{ dados.stats[3]?.base_stat }}</li>
+                </ul>
+                <ul class="list-group list-group-horizontal ">
+                    <li class="list-group-item">Spe Def: {{ dados.stats[4]?.base_stat }}</li>
+                    <li class="list-group-item">Speed: {{ dados.stats[5]?.base_stat }}</li>
+                </ul>
                 
             </div>
-           <div class="row mt-4">
-                <div class="col-md-6">
+           <div class="row">
+                <div class="col-md-6 ">
                     <span class="card-text">Height: {{ dados.height }}</span>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 ">
                     <span class="card-text">Weight: {{ dados.weight }}</span>
                 </div>
             </div>

@@ -61,6 +61,16 @@
     border-color: $cc-light-blue;
 }
 
+@media( min-width: 340px) {
+    .card-pokemon{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .card-img-top {
+        height: 100%;
+    }
+}
+
 .card-text{
     
     &.type {
@@ -70,11 +80,20 @@
 }
 
 .card-img-top {
-    height: 170px;
+    height: 140px;
+
 }
 
 .error {
     text-align: center;
     justify-content: center;
     flex: auto;
+}
+
+.list-group-horizontal,.list-group-item {
+    border: hidden;
+    align-items: center;
+    text-align: center;
+    flex: auto;
+    justify-content: center;
 }

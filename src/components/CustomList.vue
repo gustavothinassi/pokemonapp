@@ -1,7 +1,7 @@
 <template>
-    <div class="row d-flex justify-content-center">
+    <div class="row d-flex justify-content-center card-pokemon">
             <custom-card
-                class="mx-4 col-md-3"
+                class="mx-4 col-md-3 mb-4 col-sm-12"
                 v-for="(pkm, index) in dadosPokemonEvolution" 
                 :key="pkm"
                 :is-opened="index === 0"
