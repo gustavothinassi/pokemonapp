@@ -10,11 +10,6 @@
         />
       </div>
     </div>
-    <div class="row error">
-      <div v-show="dadosPokemon.length === 0">
-        <h3>{{ error }}</h3>
-      </div>
-    </div>
    
   </div>
 
@@ -27,7 +22,6 @@ import CustomSearch from '../../components/CustomSearch.vue'
 import CustomList from '../../components/CustomList.vue'
 import { pokemonStore } from '../../store/pokemon'
 import { storeToRefs } from 'pinia'
-import { ref, watchEffect } from 'vue'
 
 
 export default {
@@ -39,7 +33,6 @@ export default {
     setup() {
 
       const store = pokemonStore()
-      const teste = ref()
         
       const { dadosPokemon, error } = storeToRefs(store)
 
@@ -49,10 +42,6 @@ export default {
           await store.seachPokemon(name)
         
       }
-
-      watchEffect(() => {
-        console.log(error.value)
-      })
      
       return{
         send,

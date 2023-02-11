@@ -13,7 +13,8 @@ export const pokemonStore = defineStore('pokemon', {
     },
     actions: {
         async seachPokemon (search) {
-           if(search === null) return        
+           if(search === null) return 
+            
            const request = await fetch("https://pokeapi.co/api/v2/pokemon-species/" + search.toLowerCase())
 
           if(request.status === 404){
