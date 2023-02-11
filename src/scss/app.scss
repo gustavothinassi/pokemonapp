@@ -1,0 +1,80 @@
+@import './_variables.scss';
+
+.router-link-exact-active {
+    color: $gray-200!important;
+}
+
+.navbar {
+    background-color: $cc-light-blue; 
+}
+
+
+.navbar ul li a {
+    &:hover {
+        color: $gray-500;
+    }
+
+}
+
+.navbar-brand {
+    &:hover {
+        color: $white;
+    }
+    &.titulo{
+        text-transform: uppercase;
+    }
+    color: $white;
+}
+
+.navbar-nav:hover {
+   
+        background-color: $cc-light-blue!important;
+   
+}
+
+.nav-link {
+    color: $white;
+    margin-left: 10px;
+    &:hover{
+        background-color: $cc-light-blue!important;
+    }
+}
+
+
+.btn{
+    &.btn-primary {
+        background-color: $cc-light-blue;
+        border-color: $cc-light-blue;
+        color: $white;
+        height: 45px;
+        &:hover{
+            opacity: 0.8;
+            border-color: $cc-light-blue;
+        }
+    }
+}
+
+.card {
+    height: 100%;
+    overflow-y: hidden;
+    text-align: center;
+    border-color: $cc-light-blue;
+}
+
+.card-text{
+    
+    &.type {
+        font-weight: bold;
+    }
+
+}
+
+.card-img-top {
+    height: 170px;
+}
+
+.error {
+    text-align: center;
+    justify-content: center;
+    flex: auto;
+}
